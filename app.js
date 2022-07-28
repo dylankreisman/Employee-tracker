@@ -40,7 +40,35 @@ inquirer.prompt([{
         })
     }
 
+    if(promptAns.q === ("add a department")){
+            inquirer.prompt([{
+                name: 'newDepartment',
+                message: 'Type in the department you wish to add',
+                type: 'input'
+            }])
+            .then((name) => {
+                db.query(`INSERT INTO department (department_name) SET ${name}`, function (err, results, fields) {
+                    console.log(results)
+                })
+            })
+        }
+    
 
+    if(promptAns.q === ("add an role")){
+            inquirer.prompt([{
+                name: 'newRole',
+                message: 'Type in the role you wish to add',
+                type: 'input'
+            }])
+    }
+
+    if(promptAns.q === ("add an employee")){
+        
+    }
+
+    if(promptAns.q === ("update an employee role")){
+        
+    }
 })
 
 //console.table
