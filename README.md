@@ -9,7 +9,7 @@ The purpose of this project is to create a back-end, command-line applicaiton th
 - Node.JS
 
 ## Functional Demonstration
-![Video](https://youtu.be/cNyitX4qE30)
+[Video](https://youtu.be/cNyitX4qE30)
 
 ## Code Snippet
 The snippet below demonstrates how I asked the initial questions with inquirer, and then creating a promise function to that would show all the departments if that was the choice the user wanted to return.
@@ -30,5 +30,5 @@ inquirer.prompt([{
 ```
 
 ## Links
-![LinkedIn](https://www.linkedin.com/in/dylan-kreisman-3752b1160/)
-![GitHub](https://github.com/dylankreisman/)
+[LinkedIn](https://www.linkedin.com/in/dylan-kreisman-3752b1160/)
+[GitHub](https://github.com/dylankreisman/)
