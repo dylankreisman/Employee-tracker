@@ -12,7 +12,7 @@ const db = mysql2.createConnection({
 })
 
 //Start questions with inquirer
-inquirer.prompt([{
+    inquirer.prompt([{
     name: 'q',
     type: 'list',
     message: ' What would you like to do?',
@@ -83,7 +83,7 @@ inquirer.prompt([{
         ]).then(function(answer){
             console.log(answer.newRole, answer.salaryRole, answer.deptRole)
             db.connect()
-            db.query(`INSERT INTO role(title, salary, department_id, department_name) VALUES ("${answer.newRole}", "${answer.salaryRole}", "${answer.deptRole}");`, function (err, results){
+            db.query(`INSERT INTO role(title, salary, department_name) VALUES ("${answer.newRole}", "${answer.salaryRole}", "${answer.deptRole}");`, function (err, results){
                 if (err){
                     console.log(err)
                 }
@@ -134,4 +134,5 @@ inquirer.prompt([{
         })
     }
 })
+
 
